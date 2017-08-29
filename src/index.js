@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-import App from './App';
+import App from "./App";
 
 
 const TODOS = [
@@ -13,4 +13,4 @@ const TODOS = [
   { id: 1503999071298, text: "Pay credit card bill", completed: true },
 ];
 
-ReactDOM.render(<App todos={TODOS} />, document.getElementById('root'));
+ReactDOM.render(<App todos={TODOS} />, document.getElementById("root"));
