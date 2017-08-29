@@ -1,5 +1,58 @@
+/* Global Styles */
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    background: rgba(147,218,178,1);
+    background: -moz-linear-gradient(-45deg, rgba(147,218,178,1) 0%, rgba(68,205,150,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(147,218,178,1)), color-stop(100%, rgba(68,205,150,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(147,218,178,1) 0%, rgba(68,205,150,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(147,218,178,1) 0%, rgba(68,205,150,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(147,218,178,1) 0%, rgba(68,205,150,1) 100%);
+    background: linear-gradient(135deg, rgba(147,218,178,1) 0%, rgba(68,205,150,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93dab2', endColorstr='#44cd96', GradientType=1 );
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #708288;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Custom Styles */
+
+.main-wrapper {
+    background: #FAFBFE;
+}
+
+.toggle--customColor {
+    color: #708288;
+}
+
+input:checked+.toggle--customColor {
+    background: #708288;
+}
+
+.task {
+    color: #708288;
+}
+
+.task-list {
+    padding: 12px;
+}
+
+.task-completed {
+    color: #D2D6D9;
+    text-decoration: line-through;
+}
+
+.task-action {
+    color: #D2D6D9;
 }
