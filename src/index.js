@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import App from './App';
+
 
 const TODOS = [
   { id: 1503999071258, text: "Help Dave with Project", completed: false },
@@ -11,4 +13,4 @@ const TODOS = [
   { id: 1503999071298, text: "Pay credit card bill", completed: true },
 ];
 
-ReactDOM.render(<h1>TODO APP</h1>, document.getElementById('root'));
+ReactDOM.render(<App todos={TODOS} />, document.getElementById('root'));
