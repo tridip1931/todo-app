@@ -24,16 +24,15 @@ class AddTodo extends Component {
 
   render() {
     return (
-      <div className="flex-parent">
-        <input
-          type="text"
-          className="input border-r--0 round-l"
-          placeholder="Add a new task"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-        <button className="btn px24 round-r" onClick={this.handleSubmit}>Add</button>
-      </div>
+      <form className="relative" onSubmit={this.handleSubmit}>
+          <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+              <svg className="icon"><use xlinkHref="#icon-plus"></use></svg>
+          </div>
+          <input className="input pl36" placeholder="Add a new task"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
+      </form>
     );
   }
 }
