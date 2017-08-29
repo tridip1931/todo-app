@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To DO App</title>
+
+    <!-- Load Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700|Roboto:300" rel="stylesheet">
+
+    <!-- Load Assemble CSS  -->
+    <link href="https://api.mapbox.com/mapbox-assembly/v0.17.0/assembly.min.css" rel="stylesheet">
+
+    <!-- Load Custom CSS  -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Load Assembly JSs  -->
+    <script async defer src='https://api.mapbox.com/mapbox-assembly/v0.17.0/assembly.js'></script>
+  </head>
+  <body>
+      <div class="flex-parent--column flex-parent--center-main flex-parent--center-main">
+          <div class="flex-child align-center my60">
+              <h1 class="txt-h1 color-white">Today's Tasks</h1>
+          </div>
+
+          <!-- Main Container  -->
+          <div class="flex-parent flex-parent--center-cross flex-parent--center-main">
+            <div class="main-wrapper align-center round w600 py24 px24">
+
+                <!-- Input for Adding New Task  -->
+                <div class='relative'>
+                    <div class='absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36'>
+                        <svg class='icon'><use xlink:href='#icon-plus'></use></svg>
+                    </div>
+                    <input class='input pl36' placeholder='Add a new task'>
+                </div>
+
+                <!-- Filters for All, Active, Completed -->
+                <div class="py18">
+                    <div class="flex-parent flex-parent--center-main">
+                        <div class='toggle-group txt-s mr18'>
+                            <label class='toggle-container'>
+                                <input checked name='toggle-2' type='radio' />
+                                <div class='toggle toggle--customColor'>All</div>
+                            </label>
+                            <label class='toggle-container'>
+                                <input name='toggle-2' type='radio' />
+                                <div class='toggle toggle--customColor'>Active</div>
+                            </label>
+                            <label class='toggle-container'>
+                                <input name='toggle-2' type='radio' />
+                                <div class='toggle toggle--customColor'>Completed</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task List Container -->
+                <div class="py18">
+                    <ul class="todo-list">
+                        <!-- Task List -->
+                        <li>
+                            <div class="flex-parent relative task-list">
+                                <label class='checkbox-container'>
+                                    <input type='checkbox' />
+                                    <div class='checkbox mr6 checkbox--green'>
+                                        <svg class='icon'><use xlink:href='#icon-check' /></svg>
+                                    </div>
+                                    <span class="task">Help Dave with Project</span>
+                                </label>
+
+                                <!-- Actions Button -->
+                                <div class='absolute flex-parent flex-parent--center-main right task-action'>
+                                    <a href="#">
+                                        <svg class='icon ml6'><use xlink:href='#icon-pencil'></use></svg>
+                                    </a> 
+                                    <a href="#">
+                                        <svg class='icon ml6'><use xlink:href='#icon-trash'></use></svg>
+                                    </a> 
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END Task List  -->
+
+                        <!-- Task List -->
+                        <li>
+                            <div class="flex-parent relative task-list">
+                                <label class='checkbox-container'>
+                                    <input type='checkbox' />
+                                    <div class='checkbox mr6 checkbox--green'>
+                                        <svg class='icon'><use xlink:href='#icon-check' /></svg>
+                                    </div>
+                                    <span class="task">Make important phone call</span>
+                                </label>
+
+                                <!-- Actions Button -->
+                                <div class='absolute flex-parent flex-parent--center-main right task-action'>
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-pencil'></use></svg>
+                                    </a> 
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-trash'></use></svg>
+                                    </a> 
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END Task List  -->
+                        
+                        <!-- Task List  -->
+                        <li>
+                            <div class="flex-parent relative task-list">
+                                <label class='checkbox-container'>
+                                    <input type='checkbox' />
+                                    <div class='checkbox mr6 checkbox--green'>
+                                        <svg class='icon'><use xlink:href='#icon-check' /></svg>
+                                    </div>
+                                    <span class="task">Email Jason</span>
+                                </label>
+
+                                <!-- Actions Button -->
+                                <div class='absolute flex-parent flex-parent--center-main right task-action'>
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-pencil'></use></svg>
+                                    </a> 
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-trash'></use></svg>
+                                    </a> 
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END Task List  -->
+
+                        <!-- Task List -->
+                        <li>
+                            <div class="flex-parent relative task-list">
+                                <label class='checkbox-container'>
+                                    <input checked type='checkbox' />
+                                    <div class='checkbox mr6 checkbox--green'>
+                                        <svg class='icon'><use xlink:href='#icon-check' /></svg>
+                                    </div>
+                                    <span class="task-completed">Drop by mail centre</span>
+                                </label>
+
+                                <!-- Actions Button -->
+                                <div class='absolute flex-parent flex-parent--center-main right task-action'>
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-pencil'></use></svg>
+                                    </a> 
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-trash'></use></svg>
+                                    </a> 
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END Task List  -->
+
+                        <!-- Task List -->
+                        <li>
+                            <div class="flex-parent relative task-list">
+                                <label class='checkbox-container'>
+                                    <input checked type='checkbox' />
+                                    <div class='checkbox mr6 checkbox--green'>
+                                        <svg class='icon'><use xlink:href='#icon-check' /></svg>
+                                    </div>
+                                    <span class="task-completed">Pay credit car bill</span>
+                                </label>
+
+                                <!-- Actions Button -->
+                                <div class='absolute flex-parent flex-parent--center-main right task-action'>
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-pencil'></use></svg>
+                                    </a> 
+                                    <a href="">
+                                        <svg class='icon ml6'><use xlink:href='#icon-trash'></use></svg>
+                                    </a> 
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END Task List  -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
